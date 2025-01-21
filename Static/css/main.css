@@ -24,6 +24,35 @@ input, button, textarea, select {
   font: inherit;
 }
 
+a {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.15em;
+  color: hsl(42, 45%, 90%);
+}
+
+p {
+  font-size: 0.95em;
+  font-family: "Abril Fatface", serif;
+  line-height: 1.75;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-family: "Abril Fatface", serif;
+  color: hsl(29, 94%, 56%);
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: "Abril Fatface", serif;
+  color: hsl(42, 45%, 90%);
+  line-height: 1;
+}
+
 body {
   background-color: #375971;
 }
@@ -38,366 +67,159 @@ ul {
   list-style: none;
 }
 
-header {
-  padding: 0.25em 0.5em;
-  color: hsl(42, 45%, 90%);
-  background-color: #375971;
+.header {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
-header .header-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .header-container {
+  padding: 2em;
 }
-header .header-top img {
-  width: 100%;
-  max-width: 4em;
-  height: auto;
+.header .header-container .header-logo img {
+  height: 5.5em;
+  width: auto;
 }
-header .header-top .header-title {
-  flex-grow: 2;
+.header .header-container .header-title h1 {
   text-align: center;
   font-family: "Chewy", serif;
-  color: hsl(29, 94%, 56%);
-  line-height: 1.75;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: inherit;
-  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
-  padding: 0.25em 0 0.5em 0;
-  font-size: 1.75em;
-  line-height: 0;
-  text-decoration: underline;
-  font-style: italic;
-}
-header .header-top .header-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75em;
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  font-size: 1.5em;
-  color: hsl(42, 45%, 90%);
-}
-
-.nav_bar {
-  width: 100%;
-  background-color: #375971;
-  color: hsl(42, 45%, 90%);
-}
-.nav_bar .nav_bar_wrapper {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 1.25em;
-  list-style: none;
-}
-.nav_bar .nav_bar_wrapper .nav_bar_item {
-  cursor: pointer;
-}
-
-.nav_link {
-  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  color: hsl(42, 45%, 90%);
-  font-size: 1.25em;
-}
-
-.btn {
-  background-color: #faf9f6;
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  border: none;
-}
-
-.btn-submit {
-  color: #375971;
-  font-size: 1.15em;
-  text-decoration: underline;
-}
-
-.btn-link {
-  padding: 0.15em 0.5em;
-  background-color: #375971;
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  font-size: 1.25em;
-  color: hsl(29, 94%, 56%);
   text-shadow: 2px 2px 4px hsl(232, 21%, 20%);
 }
 
-.form-container {
-  width: 75%;
-  margin: 0 auto;
-  padding-bottom: 2em;
+.nav_bar {
+  margin: 0 0 3em 0;
 }
-.form-container .form-title {
-  text-align: center;
-  font-family: "Chewy", serif;
-  color: hsl(29, 94%, 56%);
-  line-height: 1.75;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: inherit;
-  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
-  line-height: 0;
-  font-size: 2em;
-}
-.form-container form {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-top: 3em;
-}
-
-.form-field {
-  width: 75%;
-  margin: 0 auto;
-  height: 1em;
-  border: none;
-  border-bottom: 2px solid hsl(29, 94%, 56%);
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
+.nav_bar .nav_bar_wrapper .nav_bar_item .nav_link {
+  font-size: 1.25em;
   letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  font-size: 1.15em;
-  color: #375971;
-  text-align: center;
 }
 
 .list-actionbar {
-  padding: 2em 2em;
+  width: 75%;
+  margin: 0 auto;
+}
+.list-actionbar h2 {
   text-align: center;
+  text-shadow: 2px 2px 4px hsl(232, 21%, 20%);
 }
 .list-actionbar .actionbar-container {
-  width: fit-content;
-  max-width: 90%;
-  margin: 1em auto 0 auto;
-  border: 2px solid hsl(42, 45%, 90%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
+  margin: 3em 0;
+  padding: 1em 0;
+  border: 3px solid hsl(42, 45%, 90%);
+  box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  border-radius: 0.4em;
 }
-.list-actionbar .actionbar-container .actionbar_item {
-  padding: 0.5em 0.75em;
-  text-shadow: 4px 4px 8px hsl(232, 21%, 20%);
-  transition: ease-in-out;
-}
-.list-actionbar .actionbar-container .actionbar_item :hover {
-  text-shadow: 1em 1em 2em hsl(232, 21%, 20%);
-}
-.list-actionbar .actionbar-container .actionbar_item .actionbar_link {
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  color: hsl(42, 45%, 90%);
-  font-size: 1.15em;
-}
-
-article {
+.pagination {
   width: 65%;
-  text-wrap: pretty;
+  margin: 2em auto;
+  color: hsl(29, 94%, 56%);
 }
-
-.grid-3-col {
+.grid-3fr-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5em;
 }
 
-.grid-2-col-small-large {
+.grid-15fr-col-2 {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 0.5em;
+  grid-template-columns: 1fr 5fr;
+  gap: 2em;
 }
 
-.card-container {
-  width: 100%;
+.grid-113fr-col-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1.5em;
-  list-style: none;
-  padding: 0 1em;
+  grid-template-columns: 1fr 1fr 3fr;
+  gap: 2em;
 }
 
-.card-container-large-border {
-  width: 90%;
-  margin: 0 auto;
-  border: 2px solid hsl(29, 94%, 56%);
-  padding: 2em 1em;
-}
-
-.card {
-  max-width: 0.75pxpx;
+.flex-end-center-2 {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.flex-center-center-2 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.25em;
-  border: 2px solid hsl(42, 45%, 90%);
-  border-radius: 0.25em;
-  box-shadow: 2px 2px 4px hsl(232, 21%, 20%);
-}
-.card .card-title {
-  text-align: center;
-  font-family: "Chewy", serif;
-  color: hsl(29, 94%, 56%);
-  line-height: 1.75;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: inherit;
-  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
-  font-size: 1.15em;
-  color: hsl(29, 94%, 56%);
-  text-decoration: underline;
-}
-.card .card-image {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  max-height: 300px;
-  border: 1px solid hsl(232, 21%, 20%);
-}
-.card .card-text {
-  text-align: justify-all;
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  font-size: 0.95em;
-  color: #375971;
-  padding: 0.25em 0.5em;
+  gap: 2em;
 }
 
-main {
-  height: 75vh;
-  background-color: #375971;
-}
-main h2 {
-  font-family: "Chewy", serif;
-  color: hsl(29, 94%, 56%);
-  line-height: 1.75;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: inherit;
-  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
-  font-size: 2.5em;
-  color: hsl(29, 94%, 56%);
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-.list-page {
-  background-color: #375971;
-  color: hsl(42, 45%, 90%);
-}
-
-.detail-recipe {
-  margin-top: 2em;
-  list-style: none;
-}
-.detail-recipe .detail-title-wrapper {
+.flex-space-between-center {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5em;
+  gap: 2em;
 }
-.detail-recipe .detail-title-wrapper .detail-title {
-  font-size: 2.5em;
-  color: hsl(29, 94%, 56%);
-  line-height: 0;
+
+.list-page ul {
+  gap: 8em;
+}
+.list-page ul li {
+  padding: 1em 0;
+  border: 3px solid hsl(42, 45%, 90%);
+  box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  border-radius: 0.4em;
+}
+.list-page ul li a {
+  flex-direction: column;
+}
+.list-page ul li a .title {
+  text-align: center;
   margin-bottom: 1em;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px hsl(232, 21%, 20%);
 }
-.detail-recipe .detail-title-wrapper p {
-  color: hsl(29, 94%, 56%);
-  font-size: 1em;
-  margin-bottom: 2em;
+.list-page ul li a img {
+  width: 100%;
+  max-width: 18.75em;
+}
+.list-page ul li a h2 {
+  margin-top: 1em;
 }
 
-.detail-wrapper-1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 1em;
+.detail {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+  border: 3px solid hsl(42, 45%, 90%);
+  box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  border-radius: 0.4em;
 }
-.detail-wrapper-1 .article-wrapper {
-  border: 2px solid hsl(42, 45%, 90%);
-  border-radius: 0.25em;
-  box-shadow: 2px 2px 4px hsl(232, 21%, 20%);
-  padding: 2em 1.5em;
-}
-.detail-wrapper-1 .article-wrapper p {
-  font-family: "Abril Fatface", serif;
-  color: hsl(232, 21%, 20%);
-  line-height: 1.75;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-style: inherit;
-  font-size: 1.15em;
-  color: hsl(42, 45%, 90%);
-  letter-spacing: 2px;
-}
-.detail-wrapper-1 .detail-ingredients {
-  height: 100%;
-  border: 2px solid hsl(42, 45%, 90%);
-  border-radius: 0.25em;
-  box-shadow: 2px 2px 4px hsl(232, 21%, 20%);
-  padding: 0 1.25em 1.5em 1.25em;
-  width: 46%;
-}
-.detail-wrapper-1 .detail-ingredients h3 {
+.detail h2 {
   text-align: center;
-  font-size: 1.15em;
   color: hsl(29, 94%, 56%);
-  margin-bottom: 2em;
+  text-shadow: 2px 4px solid hsl(232, 21%, 20%);
+}
+.detail p {
+  width: 75%;
+  margin: 2em auto;
+}
+.detail ul {
+  margin: 2em 0;
+}
+.detail ul li {
+  margin: 1em 0;
 }
 
-.detail-wrapper-2 {
-  margin-top: 10em;
-  width: 90%;
-  border: 2px solid hsl(42, 45%, 90%);
-  border-radius: 0.25em;
-  box-shadow: 2px 2px 4px hsl(232, 21%, 20%);
-  padding: 2em 1.5em;
+.ingredients-qty {
+  text-align: right;
+}
+
+.article-2 {
+  margin-top: 3em;
+}
+
+.directions-container {
+  display: grid;
+  grid-template-columns: 5% 80%;
+  gap: 2em;
+}
+.directions-container span {
+  text-align: justify;
+}
+.directions-container span:first-child {
+  padding-left: 1.5em;
+}
+
+#article-1-title {
+  margin: 2em 0 1em 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,13 @@
+{% load static %}
 <header class="header">
-    <div class="header-top">
+    <div class="header-container grid-3fr-col">
         <div class="header-logo">
-            <img src="../../Static/img/logo-2.png" alt="Logo for Site">
+            <img src="{% static 'img/logo-2.png' %}" alt="Logo for Site">
         </div>
         <div class="header-title">
             <h1>The Recipe</h1>
         </div>
-        <div class="header-user">
+        <div class="header-user flex-end-center-2">
             <a href="#">Login</a>
             <a href="#">Register</a>
         </div>
