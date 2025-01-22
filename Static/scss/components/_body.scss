@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+body{
+  background-color: vars.$color-secondary;
+
+  .body-container{
+    width: 85%;
+    margin: 0 auto;
+    color: vars.$color-light;
+    font-family: "Abril Fatface", serif;
+  }
+}
+
+ul{
+  list-style: none;
+}

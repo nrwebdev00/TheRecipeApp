@@ -14,15 +14,18 @@ class RecipeAdmin(admin.ModelAdmin):
 
 @admin.register(Ingredient)
 class IngredientAdmin(admin.ModelAdmin):
-    list_display = ('name','group_number')
-    ordering = ('group_number',)
+    list_display = ('recipe','name','group_number')
+    ordering = ('recipe','group_number',)
+    list_filter = ('recipe','group_number')
 
 @admin.register(Directions)
 class DirectionsAdmin(admin.ModelAdmin):
     list_display = ('title','group_number')
-    ordering = ('group_number',)
+    ordering = ('group_number','number')
+    list_filter = ('recipe',)
 
 @admin.register(Recipe_Images)
 class Recipe_ImagesAdmin(admin.ModelAdmin):
-    list_display = ('Image', 'title')
-    ordering = ('title',)
+    list_display = ('recipe','title','Image')
+    ordering = ('recipe','title',)
+    list_filter = ('recipe',)

@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+.flex-end-center-2{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.flex-center-center-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.flex-space-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.flex-start-start-1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 1em;
+}
+
+

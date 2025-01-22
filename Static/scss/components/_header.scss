@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+.header{
+  width: 100%;
+  .header-container{
+    padding: 2em;
+    .header-logo{
+      img{
+        height: 5.5em;
+        width: auto;
+      }
+    }
+    .header-title{
+      h1{
+        text-align: center;
+        font-family: vars.$font-title;
+        text-shadow: vars.$text-shadow;
+      }
+    }
+  }
+}

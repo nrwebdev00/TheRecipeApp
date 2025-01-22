@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+$color-primary: hsl(29,94%,56%);
+$color-primary-dark: hsl(29,94%,16%);
+$color-secondary: #375971;
+
+$color-info: hsl(224, 36%, 37%);
+$color-success: hsl(153, 49%, 29%);
+$color-warning: hsl(53, 84%, 58%);
+$color-error: hsl(0, 88%, 53%);
+
+$color-gray8-800: hsl(232,5%,60%);
+$color-gray-700: hsl(232,5%,50%);
+$color-gray-600: hsl(232,5%,40%);
+$color-gray: hsl(232, 5%, 30%);
+$color-gray-400: hsl(232,5%,20%);
+$color-gray-300: hsl(232,5%,10%);
+$color-gray-200: hsl(232,5%,5%);
+
+$color-dark: hsl(232,21%,20%);
+$color-light: hsl(42, 45%, 90%);
+
+$color-black:hsl(232,21%,5%);
+$color-white: #faf9f6;
+
+
+$color-background: $color-light;
+$color-default-font: $color-dark;
+
+$font-default: "Abril Fatface", serif ;
+$font-title: "Chewy", serif;
+
+$box-shadow: 3px 3px 6px $color-dark;
+$text-shadow:1px 1px 2px $color-dark;
+

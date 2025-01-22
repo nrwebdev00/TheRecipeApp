@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mix;
+
+a{
+  font-family: vars.$font-default;
+  font-size: 1.15em;
+  color: vars.$color-light;
+}
+p{
+  font-size: .95em;
+  font-family: "Abril Fatface", serif;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-align: justify;
+
+}
+
+h1{
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-family: vars.$font-default;
+  color: vars.$color-primary;
+}
+
+h2{
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: vars.$font-default;
+  color: vars.$color-light;
+  line-height: 1;
+}
+h3{
+
+}
+h4{
+  font-size: 1.35em;
+  letter-spacing: 2px;
+  font-family: vars.$font-default;
+  color: inherit;
+}
+h5{
+  font-size: 1.15em;
+}
