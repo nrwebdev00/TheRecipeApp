@@ -1,6 +1,69 @@
 {% extends "base.html" %}
-{% block title %}Recipe: {{ recipe.name }}{% endblock %}
+{% block title %}Recipe: {{ recipe.title }}{% endblock %}
 {% block content %}
     {% include "partials/navbar.html" %}
-    <h1>Detail of Recipe</h1>
+    <div class="detail-title-wrapper flex-center-center-2">
+        <h3>{{ recipe.title }}</h3>
+    </div>
+    <div class="detail-container">
+        <main>
+            <div class="main-row grid-2fr-col-2 mb-2">
+                <img
+                    src="{{ recipe.main_image.url }}"
+                    alt="{{ recipe.title }}"
+                    class="detail-img"
+                >
+                <div>
+                    <h2>Recipe Description:</h2>
+                    <p class="recipe-description mt-1">{{ recipe.description }}</p>
+                </div>
+
+            </div>
+            <div class="main-row grid-2fr-col-2 mb-2">
+                <article>
+                    <h3>{{ recipe.article_1_title }}</h3>
+                    <p>{{ recipe.article_1 }}</p>
+                </article>
+                <div class="ingredients-wrapper">
+                    <h2 class="mb-2">Ingredients</h2>
+                    <table>
+                        <tr class="grid-112fr-col-25">
+                            <th>Amount</th>
+                            <th>Unit</th>
+                            <th>Name</th>
+                        </tr>
+                        {% for i in ingredients %}
+                        <tr class="grid-112fr-col-25">
+                            <td>{{ i.amount }}</td>
+                            <td>{{ i.amount_unit }}</td>
+                            <td>{{ i.name }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+
+            </div>
+            <div class="main-row grid-2fr-col-2 mb-2">
+                <div class="directions-wrapper">
+                    <h2 class="mb-2">Directions</h2>
+                    <table>
+                        {% for d in directions %}
+                        <tr class="grid-13fr-col-25 mt-1">
+                            <td>{{ d.number }}</td>
+                            <td>
+                                {{ d.description }}
+                                <br>
+                                {{ d.direction }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                    <article>
+                        <h3>{{ recipe.article_2_title }}</h3>
+                        <p class="mt-1">{{ recipe.article_2 }}</p>
+                    </article>
+            </div>
+        </main>
+    </div>
 {% endblock %}

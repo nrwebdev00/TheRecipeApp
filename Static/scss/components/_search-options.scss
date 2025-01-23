@@ -2,19 +2,9 @@
 @use "../abstracts/mixins" as mix;
 
 .search-options{
-  width: 55%;
-  margin: 0 auto;
-  border: 3px solid vars.$color-dark;
-  border-bottom: none;
-  border-top-left-radius: .5em;
-  border-top-right-radius: .5em;
-  padding: .5em 0;
-  background-color: vars.$color-light;
-  color: vars.$color-primary;
-
+  @include mix.tab-notebook-looking-parent;
   .search-item{
-    text-shadow: vars.$text-shadow;
+    @include mix.tab-notebook-looking-child;
     font-size: 1.35em;
-    letter-spacing: 1px;
   }
 }

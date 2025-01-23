@@ -131,9 +131,9 @@ class Directions(models.Model):
     admin_flagged = AdminFlaggedManager()
 
     class Meta:
-        ordering = ['-number']
+        ordering = ['number']
         indexes = [
-            models.Index(fields=['-number']),
+            models.Index(fields=['number']),
         ]
 
     def __str__(self):

@@ -8,6 +8,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1em;
 }
+.grid-2fr-col-2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
 .grid-15fr-col-2{
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -17,4 +22,14 @@
   display: grid;
   grid-template-columns:  1fr 1fr 3fr;
   gap: 2em;
+}
+.grid-112fr-col-25{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: .25em;
+}
+.grid-13fr-col-25{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  gap: .25em;
 }

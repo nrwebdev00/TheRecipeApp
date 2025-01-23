@@ -116,8 +116,8 @@ ul {
 }
 .search-options .search-item {
   text-shadow: 1px 1px 2px hsl(232, 21%, 20%);
-  font-size: 1.35em;
   letter-spacing: 1px;
+  font-size: 1.35em;
 }
 
 .grid-3fr-col {
@@ -132,6 +132,12 @@ ul {
   gap: 1em;
 }
 
+.grid-2fr-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
 .grid-15fr-col-2 {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -142,6 +148,18 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr;
   gap: 2em;
+}
+
+.grid-112fr-col-25 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 0.25em;
+}
+
+.grid-13fr-col-25 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.25em;
 }
 
 .flex-end-center-2 {
@@ -193,7 +211,6 @@ ul {
   color: hsl(29, 94%, 56%);
 }
 .list-page-container .list-page-title {
-  text-align: center;
   font-family: "Chewy", serif;
   color: hsl(29, 94%, 56%);
   line-height: 1.75;
@@ -201,6 +218,7 @@ ul {
   font-weight: 400;
   font-style: inherit;
   text-shadow: 1px 1px 2px hsl(232, 21%, 20%);
+  text-align: center;
   font-size: 2.25em;
 }
 
@@ -240,6 +258,70 @@ ul {
   border-radius: 0.5em;
   border: 4px solid hsl(29, 94%, 56%);
   box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+}
+
+.detail-title-wrapper {
+  width: 55%;
+  margin: 0 auto;
+  border: 3px solid hsl(232, 21%, 20%);
+  border-bottom: none;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  padding: 0.5em 0;
+  background-color: hsl(42, 45%, 90%);
+  color: hsl(29, 94%, 56%);
+}
+.detail-title-wrapper h3 {
+  text-shadow: 1px 1px 2px hsl(232, 21%, 20%);
+  letter-spacing: 1px;
+  font-size: 1.5em;
+}
+
+.detail-container {
+  width: 100%;
+  border: 3px solid hsl(232, 21%, 20%);
+  border-radius: 0.5em;
+  padding: 1em;
+  background-color: hsl(42, 45%, 90%);
+  color: hsl(29, 94%, 56%);
+}
+.detail-container .detail-img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 0.5em;
+  border: 4px solid hsl(29, 94%, 56%);
+  box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+}
+.detail-container h2 {
+  font-size: 1.55em;
+  color: #375971;
+}
+.detail-container p {
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+.detail-container article h3 {
+  margin-bottom: 0.75em;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+  color: #375971;
+}
+.detail-container article p {
+  padding: 1em 2.5em 0 0;
+}
+.detail-container table {
+  width: 90%;
+  margin: 0 auto;
+  border: 4px solid hsl(29, 94%, 56%);
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.main-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2fr;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -29,3 +29,37 @@
 @mixin text-shadow{
   text-shadow: 2px 4px solid vars.$color-dark;
 }
+// Notebook look
+@mixin tab-notebook-looking-parent{
+  width: 55%;
+  margin: 0 auto;
+  border: 3px solid vars.$color-dark;
+  border-bottom: none;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+  padding: .5em 0;
+  background-color: vars.$color-light;
+  color: vars.$color-primary;
+}
+@mixin tab-notebook-looking-child{
+  text-shadow: vars.$text-shadow;
+  letter-spacing: 1px;
+}
+@mixin notebook-paper-container {
+  width: 100%;
+  border: 3px solid vars.$color-dark;
+  border-radius: .5em;
+  padding: 1em;
+  background-color: vars.$color-light;
+  color: vars.$color-primary;
+}
+
+//code
+//Recipe Main image display
+@mixin main-image-display{
+  width: 100%;
+  max-height: 500px;
+  border-radius: .5em;
+  border: 4px solid vars.$color-primary;
+  box-shadow: vars.$box-shadow;
+}
