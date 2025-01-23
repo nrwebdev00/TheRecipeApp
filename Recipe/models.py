@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.urls import reverse
 from django.utils import timezone
 from django_extensions.db.fields import AutoSlugField
 
@@ -60,6 +61,17 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse(
+            'recipes:recipe_detail',
+            args=[
+                self.publish.year,
+                self.publish.month,
+                self.publish.day,
+                self.slug
+            ]
+        )
 
 class Recipe_Images(models.Model):
     class Admin_Status(models.TextChoices):

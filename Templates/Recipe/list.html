@@ -8,7 +8,7 @@
         <main class="list-page-wrapper flex-center-center-2">
             {% for recipe in recipes %}
                 <div class="page-item">
-                    <a href="{% url 'recipes:recipe_detail' recipe.id %}">
+                    <a href="{{ recipe.get_absolute_url }}">
                         <div class="wrapper flex-start-start-1">
                             <div class="left">
                                 <h2 class="mt-1">{{ recipe.title }}</h2>

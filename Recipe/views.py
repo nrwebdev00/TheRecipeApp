@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Recipe, Directions,Ingredient,Recipe_Images
 
 def index(request):
@@ -12,8 +12,15 @@ def recipe_list(request):
     context = {'recipes': recipes,}
     return render(request, 'Recipe/list.html', context)
 
-def recipe_detail(request, id):
-    recipe = Recipe.objects.get(id=id)
+def recipe_detail(request, year,month,day,recipe):
+    recipe = get_object_or_404(
+        Recipe,
+        status=Recipe.Status.PUBLISHED,
+        slug=recipe,
+        publish__year=year,
+        publish__month=month,
+        publish__day=day,
+    )
     ingredients = Ingredient.objects.filter(recipe=recipe.id)
     directions = Directions.objects.filter(recipe=recipe.id)
     images = Recipe_Images.objects.filter(recipe=recipe.id)
