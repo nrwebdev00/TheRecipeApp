@@ -27,5 +27,8 @@
                 </div>
             {% endfor %}
         </main>
+        {% if object_count > per_page %}
+            {% include "partials/pagination.html" with page=recipes %}
+        {% endif %}
     </div>
 {% endblock %}

@@ -120,6 +120,23 @@ ul {
   font-size: 1.35em;
 }
 
+.pagination {
+  width: 35%;
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  background-color: #375971;
+  padding: 1em 0;
+  border: 3px solid hsl(42, 45%, 90%);
+  box-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  border-radius: 0.4em;
+}
+.pagination .step-links a {
+  color: hsl(29, 94%, 56%);
+}
+.pagination .step-links .current {
+  color: hsl(29, 94%, 56%);
+}
+
 .grid-3fr-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

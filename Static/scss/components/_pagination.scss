@@ -1,3 +1,18 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/mixins" as mix;
 
+.pagination{
+  width: 35%;
+  padding: .5em 1em;
+  margin: 2em auto;
+  background-color: vars.$color-secondary;
+  @include mix.border-box;
+  .step-links{
+    a{
+      color: vars.$color-primary
+    }
+    .current{
+      color: vars.$color-primary
+    }
+  }
+}
